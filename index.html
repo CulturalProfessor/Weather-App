@@ -8,14 +8,29 @@
     <style>
         body{
             background-color: black;
+            display: flex;
+            flex-direction: column;
         }
-        h2{
+        h2,h1,label{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
             color: antiquewhite;
+            text-transform: uppercase;
+        }
+        h1,form{
+            text-align: center;
+        }
+        input{
+            border-radius: 8px;
+            border-color: antiquewhite;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: black;
         }
     </style>
 </head>
 <body>
+    <h1>Weather App</h1>
     <form action="" id="form">
+        <label for="text">Enter city name:</label>
         <input type="text" id="city">
         <input type="button" value="submit" id="submit">
         <h2 id="name"></h2>

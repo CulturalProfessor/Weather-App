@@ -14,9 +14,9 @@ submit.addEventListener("click", (e) => {
   fetch(url)
     .then((response) => response.json())
     .then((result) => {
-      temp.innerHTML=result["main"]["temp"]+" C";
+      temp.innerHTML=result["main"]["temp"]+" &#176C";
       cloud.innerHTML=result["weather"][0]["description"];
-      wind.innerHTML=result["wind"]["speed"]+" m/sec";
+      wind.innerHTML="Wind Speed: "+result["wind"]["speed"]+" m/sec";
       let icon_id=result["weather"][0]["icon"];
       // http://openweathermap.org/img/w/10d.png
       const icon_url=`http://openweathermap.org/img/w/${icon_id}.png`;
