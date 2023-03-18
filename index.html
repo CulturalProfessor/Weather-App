@@ -1,48 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
-    <style>
-        body{
-            background-color: black;
-        }
-        h2,h1,label{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: antiquewhite;
-            text-transform: uppercase;
-        }
-        h1,form{
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-        }
-        input{
-            border-radius: 8px;
-            border-color: antiquewhite;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: black;
-        }
-        #submit,#city,img{
-            margin: 5px auto;
-        }
-    </style>
-</head>
-<body>
-    <h1>Weather App</h1>
-    <form action="" id="form">
-        <label for="text">Enter city name:</label>
-        <input type="text" id="city">
-        <input type="button" value="submit" id="submit">
-        <h2 id="name"></h2>
-        <img src="http://openweathermap.org/img/w/03d.png" alt="" id="icon" style="height: 80px;width: 80px;">
-        <h2 id="name"></h2>
-        <h2 id="temp"></h2>
-        <h2 id="cloud"></h2>
-        <h2 id="wind"></h2>
-    </form>
-    <script src="./index.js"></script>
-</body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather App</h1>
+      <form>
+        <input type="text" id="city-input" placeholder="Enter city name" />
+        <button type="submit" id="search-button">Search</button>
+      </form>
+      <div class="weather-card">
+        <div class="weather-header">
+          <h2 id="weather-city"></h2>
+          <img src="" alt="" id="weather-icon" />
+        </div>
+        <div class="weather-body">
+          <div class="weather-info">
+            <p>Temperature: <span id="weather-temp"></span></p>
+            <p>Feels like: <span id="weather-feels-like"></span></p>
+            <p>Humidity: <span id="weather-humidity"></span></p>
+            <p>Wind speed: <span id="weather-wind-speed"></span></p>
+            <p>Weather: <span id="weather-description"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
