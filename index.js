@@ -1,13 +1,13 @@
 const API_KEY = "YOUR_API_KEY";
-const searchButton = document.getElementById("search-button");
-const cityInput = document.getElementById("city-input");
-const weatherCity = document.getElementById("weather-city");
-const weatherIcon = document.getElementById("weather-icon");
-const weatherTemp = document.getElementById("weather-temp");
-const weatherFeelsLike = document.getElementById("weather-feels-like");
-const weatherHumidity = document.getElementById("weather-humidity");
-const weatherWindSpeed = document.getElementById("weather-wind-speed");
-const weatherDescription = document.getElementById("weather-description");
+const searchButton = document.querySelector("#search-button");
+const cityInput = document.querySelector("#city-input");
+const weatherCity = document.querySelector("#weather-city");
+const weatherIcon = document.querySelector("#weather-icon");
+const weatherTemp = document.querySelector("#weather-temp");
+const weatherFeelsLike = document.querySelector("#weather-feels-like");
+const weatherHumidity = document.querySelector("#weather-humidity");
+const weatherWindSpeed = document.querySelector("#weather-wind-speed");
+const weatherDescription = document.querySelector("#weather-description");
 
 searchButton.addEventListener("click", (event) => {
   event.preventDefault();

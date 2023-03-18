@@ -4,27 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
   </head>
   <body>
     <div class="container">
-      <h1>Weather App</h1>
-      <form>
-        <input type="text" id="city-input" placeholder="Enter city name" />
-        <button type="submit" id="search-button">Search</button>
-      </form>
-      <div class="weather-card">
-        <div class="weather-header">
-          <h2 id="weather-city"></h2>
-          <img src="" alt="" id="weather-icon" />
+      <h1 class="text-center my-4">Weather App</h1>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form class="row">
+  <div class="col-sm-8 col-md-6 mb-3">
+    <input type="text" class="form-control" id="city-input" placeholder="Enter city name">
+  </div>
+  <div class="col-sm-4 col-md-4 mb-3">
+    <button type="submit" id="search-button" class="btn btn-primary btn-block">Search</button>
+  </div>
+</form>
+
         </div>
-        <div class="weather-body">
-          <div class="weather-info">
-            <p>Temperature: <span id="weather-temp"></span></p>
-            <p>Feels like: <span id="weather-feels-like"></span></p>
-            <p>Humidity: <span id="weather-humidity"></span></p>
-            <p>Wind speed: <span id="weather-wind-speed"></span></p>
-            <p>Weather: <span id="weather-description"></span></p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="card">
+            <div class="card-header">
+              <h2 id="weather-city"></h2>
+              <img src="" alt="" id="weather-icon" />
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-6 col-md-4">
+                  <p class="mb-2">Temperature:</p>
+                  <p class="mb-2">Feels like:</p>
+                  <p class="mb-2">Humidity:</p>
+                  <p class="mb-2">Wind speed:</p>
+                  <p class="mb-2">Weather:</p>
+                </div>
+                <div class="col-6 col-md-8">
+                  <p class="mb-2"><span id="weather-temp"></span></p>
+                  <p class="mb-2"><span id="weather-feels-like"></span></p>
+                  <p class="mb-2"><span id="weather-humidity"></span></p>
+                  <p class="mb-2"><span id="weather-wind-speed"></span></p>
+                  <p class="mb-2"><span id="weather-description"></span></p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
